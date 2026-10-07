@@ -24,8 +24,7 @@ ollama serve   # if not already running as a background service
 By default, app/config.py points to http://172.19.192.1:11434 — a holdover from this project's own development setup, where Ollama ran on Windows while the app ran in WSL. On a normal single-OS Ubuntu 22.04 machine (the actual ADTC target environment), change this back to:
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-
-[Running](https://github.com/casmir080/Adtc2026-agri-advisor#running)
+Running
 python -m app.main
 Ask a question naturally, e.g.: you> there are window pane marks and frass on my young maize leaves
 
@@ -33,7 +32,7 @@ When prompted, enter the current season (dry or rainy) to trigger the risk engin
 
 Type /yo at any time for the Yoruba menu mode, or exit to quit.
 
-[Running the web UI](https://github.com/casmir080/Adtc2026-agri-advisor#running-the-web-ui)
+Running the web UI
 python -m app.web
 ```
 
